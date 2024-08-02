@@ -1,0 +1,91 @@
+Footer {
+  width: 100%;
+  position: fixed; /* ou 'absolute', se você preferir */
+  bottom: 0;
+  left: 0;
+  background-color: rgb(103, 191, 239); /* cor de fundo do footer */
+  padding: 1rem; /* espaçamento interno */
+  text-align: center; /* centralizar o texto */
+  color: white;
+}
+
+Header {
+  width: 100%;
+  position: fixed; /* ou 'absolute', se você preferir */
+  top: 0;
+  left: 0;
+  background-color: rgb(103, 191, 239); /* cor de fundo do footer */
+}
+
+Header .navbar {
+  justify-content: space-between; /* Alinhar o logotipo e os links de navegação nas extremidades opostas */
+  align-items: center; /* Alinhar verticalmente */
+  display: flex;
+  padding: 0rem 1rem;
+}
+
+.navbar button {
+  color: rgb(46, 90, 177);
+  background-color: white;
+  border-radius: 3rem;
+}
+
+.navbar h1{
+  color: white;
+}
+
+.App{
+  height: 100vh;
+  padding: 1rem 2rem 2rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-conteiner{
+  display: flex;
+  flex-direction: column;
+  border: 1rem solid;
+  border-width: 0.2rem;
+  border-color: rgb(103, 191, 239);
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-conteiner h1{
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  padding: 0.2rem;
+  justify-content: left;
+}
+
+.register-conteiner{
+  display: flex;
+  flex-direction: column;
+  border: 1rem solid;
+  border-width: 0.2rem;
+  border-color: rgb(103, 191, 239);
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.App .main-page{
+  display: flex;
+  flex-direction: column;
+  font-size: 0.2rem;
+}
