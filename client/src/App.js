@@ -11,6 +11,8 @@ import 'primeicons/primeicons.css';
 import Home from './pages/Home/Home';
 import Register from './pages/Register/Register';
 import MainPage from './pages/Main/MainPage';
+import AddContact from './pages/OperationsMain/AddContact';
+import UpdateContact from './pages/OperationsMain/UpdateContact';
 
 function App() {
   return(
@@ -20,6 +22,8 @@ function App() {
           <Route path="/" element={<Home/>}/>
           <Route path="/register" element={<Register/>}/>
           <Route path="/main" element={<MainPage/>}/>
+          <Route path="/addcontact" element={<AddContact/>}/>
+          <Route path="/updatecontact" element={<UpdateContact/>}/>
         </Routes>
       </BrowserRouter>
     </div>

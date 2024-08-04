@@ -31,7 +31,8 @@ const Home = () => {
         const res = await axios.post("http://localhost:8800/login",user )
         const {data} = res
         if(data.message === "Login concluído"){ 
-          navigate("/main") // mudar esta página
+          console.log(data.email)
+          navigate("/main", {state:{email: data.email}}) 
         }
         else if(data === "Usuário não encontrado."){
           console.log("Usuário não encontrado.")
@@ -48,8 +49,6 @@ const Home = () => {
       console.log(e.target.name, ": ", e.target.value)
       setUser((prev) => ({...prev, [e.target.name] : e.target.value}))
     }
-  
-    
   return(
     <Layout>
       <Header/>
